@@ -55,8 +55,8 @@ class AddProductController extends GetxController {
       _selectedCompanyId.value = _companyDropdownItems[0].id;
     }
 
-    if (editProduct!.productImg.isNotEmpty) {
-      _images = editProduct!.productImg
+    if (editProduct.productImg.isNotEmpty) {
+      _images = editProduct.productImg
           .map((img) => XFile(img.productImg!))
           .toList();
     }
@@ -187,9 +187,9 @@ class AddProduct extends StatelessWidget {
             controller._description.text = editProduct.description;
             controller._price.text = editProduct.price.toString();
             controller._qty.text = editProduct.qty.toString();
-            controller._selectedCategoryId.value = editProduct!.categoryId;
-            controller._selectedCompanyId.value = editProduct!.companyId;
-            controller._images = editProduct!.productImg
+            controller._selectedCategoryId.value = editProduct.categoryId;
+            controller._selectedCompanyId.value = editProduct.companyId;
+            controller._images = editProduct.productImg
                 .map((img) => XFile(img.productImg!))
                 .toList();
 
