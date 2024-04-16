@@ -4,10 +4,6 @@ class CategoryModel {
 
   CategoryModel({this.id = 0, this.categoryName = ""});
 
-  // Category.fromJson(Map<String, dynamic> json) {
-  //   id = json['id'];
-  //   categoryName = json['category_name'];
-  // }
 
   factory CategoryModel.fromJson(Map<String, dynamic> json) {
     return CategoryModel(
